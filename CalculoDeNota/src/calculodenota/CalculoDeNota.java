@@ -10,7 +10,21 @@ public class CalculoDeNota {
         Scanner scan =  new Scanner(System.in);
         System.out.println("Digite a nota da primeira prova: ");//exibe a mensagem para o usuário
         nota1 = scan.nextDouble();                              // atribui o numero digitado na variavel
-        System.out.println("Valor da nota1: "+nota1);           //exibe ao usuário o valor da nota1 
+        System.out.println("Digite a nota da segunda prova: ");
+        nota2 = scan.nextDouble();
+        if((nota1+nota2)/2 < 7){
+            media= (nota1 +nota2)/2;
+            System.out.println("Recuperação final sua media das provas foi: "+media);
+        }else{
+            System.out.println("Digite a nota do trabalho: ");
+            trabalho = scan.nextDouble();
+            media=(nota1+nota2+trabalho)/3;
+            if(trabalho>= 7 ){               
+                System.out.println("Parabens você foi aprovado com média: "+media);
+            }else{
+                System.out.println("Você esta de Recuperação sua Meida foi: "+media);
+            }
+                
+        }
     }
-    
 }
