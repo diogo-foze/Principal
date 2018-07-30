@@ -16,7 +16,8 @@ public class CalculoDeNota {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
+        Double nota1, nota2, trabalho, media;
+        //declaração das variaveis
     }
     
 }
