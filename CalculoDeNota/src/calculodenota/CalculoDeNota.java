@@ -24,7 +24,7 @@ public class CalculoDeNota {
         Scanner scan =  new Scanner(System.in);
         System.out.println("Digite a nota da primeira prova: ");//exibe a mensagem para o usuário
         nota1 = scan.nextDouble();// atribui o numero digitado na variavel
-        
+        System.out.println("Valor da nota1: "+nota1);//exibe ao usuário o valor da nota1 
     }
     
 }
